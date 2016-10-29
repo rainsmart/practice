@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+.a_banner{background:url(../images/a_banner.jpg) center 0;height:360px;}
+.a_banner ul{width:960px; margin:0 auto;position:relative;}
+.a_banner li{height:56px;position:absolute;left:0;top:306px;width:240px;}
+.a_banner a{height:56px;line-height:56px;padding:0 30px;background:url(../images/a_banner_btn.jpg) repeat-x;font-size:14px;font-weight:bold;color:#4971b7;display:block; }
+
+.a_mian_l{width:680px;float:left;}
+.a_news{float:left;width:240px;padding-left:40px;}
+.a_notice{width:260px;}
+.a_mianl_bg{width:680px;background:url(../images/a_mainbg.jpg) repeat-y right 0;}
+.a_mian_l h2,.a_news h2,.a_pact h2{height:88px;line-height:88px;font-size:18px;color:#333;}
+.a_notice h4{height:30px;line-height:30px;padding-top:10px;}
+.a_notice h4 a{font-size:12px;color:#527ad1;}
+.a_time{color:#cb3232;}
+.a_notice p ,.a_pact li{line-height:22px;font-size:12px;color:#656565;}
+.a_pact li{height:22px;width:200px;margin-right:26px;float:left;}
+.a_pact li a{font-size:12px;color:#656565;}
+
+.a_news li a{line-height:26px;font-size:12px;color:#495465;display:block;}
+.a_news li span{height:26px;width:200px;line-height:26px;font-size:10px;color:#495465;display:block;}

@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+
+.c_banner{height:385px;background:url(../images/c_banner.png) no-repeat center 0;}
+
+.c_function{width:960px; margin:0 auto;}
+.c_function h1{height:61px;width:960px;float:left; line-height:61px; font-size:20px; color:#345fbb;font-weight:normal;}
+.c_function dl{width:240px; padding-top:13px; float:left;}
+.c_function dl dt{height:58px; line-height:58px; color:#2270b2; text-indent:72px; font-size:18px; margin-bottom:14px;}
+.c_function dl dd{height:22px; line-height:22px; font-size:12px; color:#666;}
+
+.c_bgp1{background:url(../images/function.gif) no-repeat;}
+.c_bgp2{background:url(../images/function.gif) no-repeat 0 -77px; }
+.c_bgp3{background:url(../images/function.gif) no-repeat 0 -158px;}
+.c_bgp4{background:url(../images/function.gif) no-repeat 0 -235px; text-indent:52px!important;}
+/*  css features */
+.c_func1{padding-top:63px;background:url(../images/c_func1.jpg) no-repeat right 0;}
+.c_func2{padding-top:30px;background:url(../images/c_func2.jpg) no-repeat left 0;}
+.c_func3{padding-top:30px;background:url(../images/c_func3.jpg) no-repeat right 0;}
+.c_func4{padding-top:16px;background:url(../images/c_func4.jpg) no-repeat left 0;}
+.c_func1 dl{float:left;}
+.c_func2 dl{float:right;}
+.c_func3 dl{float:left;}
+.c_func4 dl{float:right;}
+/* end css features */
+
+/*  css buy */
+.c_buynow{height:17px;width:18px;vertical-align:middle;background:url(../images/icon.gif) no-repeat 0 -114px;display:inline-block;}
+/*  end css buy */
+
+/* css download */
+.e_downloadl{background:url(../images/c_download.jpg) no-repeat;}
+.e_logo{ background:url(../images/crm_logo.jpg) no-repeat;}
+/* end css download */
+
+
