@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		html{height:100%;}
+		body{height: 100%;margin:0;background: #000;}
+		ul{padding:0;margin:0;}
+		.box{height:100%;position:relative;-webkit-perspective:800px;}
+		.image_list{position:absolute;-webkit-transform-style:perspective-3d;}
+		.image_list img{width:300px;-webkit-box-reflect:below 0 -webkit-linear-gradient(top,rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.5) 100%);display:block;}
+		.image_list li{width:300px;list-style:none;position:absolute;bottom:0;-webkit-transition:0.5s -webkit-transform ease-in,0.5s left ease-in;cursor: pointer;}
+		.clearfix{zoom:1;}
+		.clearfix:after{clear: both;content: "";display:block;}
+
+		img{display:block;}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<ul class="image_list clearfix" id="imgList">
+			<li><img src="images/1.jpg" alt=""></li>
+			<li><img src="images/2.jpg" alt=""></li>
+			<li><img src="images/3.jpg" alt=""></li>
+			<li><img src="images/4.jpg" alt=""></li>
+			<li><img src="images/5.jpg" alt=""></li>
+			<li><img src="images/6.jpg" alt=""></li>
+			<li><img src="images/7.jpg" alt=""></li>
+			<li><img src="images/8.jpg" alt=""></li>
+		</ul>
+
+		<a href="http://fashion.dangdang.com/20141024_lzde" target="_blank"></a>
+	</div>
+<script src="js/ku.js"></script>
+<script src="js/style.js"></script>
+
+</body>
+</html>

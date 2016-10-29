@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>消除游戏</title>
+	<style>
+*{margin:0;padding:0;}
+html{font-size: 14px;font-family: "microsoft yahei";color: #333;}
+a{text-decoration: none;margin: 0 10px;color: #333;}
+a:hover{text-decoration: underline;}
+.content{width: 900px;margin: 0 auto;padding-top: 10px;}
+#game_box{width: 802px;margin: 0 auto;position: relative;}
+#game_box .game_fs{border:1px solid #ccc;height: 60px;width: 120px;position: absolute;right: -121px;top: 0px;padding: 10px 0;}
+#game_box .game_fs p{margin: 0;line-height: 30px;padding-left: 20px;}
+#get{color: green;font-weight: bold;}
+#lost{color: red;font-weight: bold;}
+#box_box{width: 800px;height: 500px;border:1px solid #ccc;position: relative;overflow: hidden;position:relative;}
+#box_box img{position:absolute;top:0;left:0px;cursor:pointer;}
+#guan{color:blue;}
+#guan i{color:#fa5000;font-weight: bold;font-family: 'arial';font-size:20px;font-style:normal;margin:0 5px;}
+	</style>
+</head>
+<body>
+	<div class="content">
+		<p style="text-align:center;margin-bottom: 10px;"><a href="javascript:;" id="star" class="btn">开始游戏</a><a href="javascript:;" id="restart">重新开始</a><span id="guan">第<i>0</i>关</span></p>
+
+		<div id="game_box">
+			<div class="game_fs">
+				<p>得分：<span id="get">0</span></p>
+				<p>失分：<span id="lost">0</span></p>
+			</div>
+			<div id="box_box">
+				<!-- <img src="img_qq/1.png" alt=""> -->
+			</div>
+		</div>
+	</div>
+	<script src="js/index.js"></script>
+</body>
+<html>
