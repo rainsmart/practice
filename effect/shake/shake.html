@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	#div{
+		height:100px;
+		width:100px;
+		margin:100px auto;
+		position:relative;
+	}
+	#inner{
+		width:100px;
+		height:100px;
+		background:#ddd;
+		position:absolute;
+	}
+	</style>
+</head>
+<body>
+	<div id='div'>
+		<div id="inner"></div>
+	</div>
+	<script src="jquery-1.8.2.min.js"></script>
+	<script>
+		//native
+		// var box = document.getElementById('inner');
+		// shake(box)
+		// function shake(obj){
+		// 	var i = 0;
+		// 	obj.timer = setInterval(function(){
+		// 		obj.style.left = (i++%2<1 ? 5 : -5)+'px';
+		// 		if(i>12){
+		// 			clearInterval(obj.timer)
+		// 		}
+		// 	},60)
+		// }
+
+		//jquery
+		var box = $('#inner')
+		shake(box);
+		box.hover(function(){
+			shake(box);
+		},function(){
+			clearInterval(box.timer)
+		})
+		function shake(obj){
+			var i = 0;
+			obj.timer = setInterval(function(){
+				obj.animate({
+					'left' : (i++%2<1 ? 5 : -5)+'px'
+				},30)
+		
+				if(i>12){
+					clearInterval(obj.timer);
+					obj.css({
+						'left' : 0+'px'
+					})
+				}
+			},60)
+		}
+	</script>
+</body>
+</html>

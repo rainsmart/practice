@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.ellip{
+			width:50px;
+			height:50px;
+			border-radius:25px;
+			background:#000;
+			position:relative;
+			display: block;
+			margin:100px auto;
+		}
+		.inner{
+			height:10px;
+			width:40px;
+			position:absolute;
+			top:50%;
+			left:50%;
+			margin-top:-5px;
+			margin-left:-20px;
+		}
+		.inner i{
+			width:10px;
+			height:10px;
+			border-radius:5px;
+			background:#fff;
+			display: block;
+			margin-right:5px;
+			float:left;
+		}
+		.inner i:nth-child(3){
+			margin-right:0;
+		}
+		.one{
+			opacity: 0;
+		}
+		.two{
+			opacity: 0;
+		}
+		.three{
+			opacity: 0;
+		}
+	</style>
+</head>
+<body>
+	<a href="javascript:void(0);" class="ellip">
+		<div class="one inner"><i></i></div>
+		<div class="two inner"><i></i><i></i></div>
+		<div class="three inner"><i></i><i></i><i></i></div>
+	</a>
+	<script src="jquery-1.8.2.min.js"></script>
+	<script>
+		
+		ellip($('.ellip'));
+		function ellip(obj){
+			var one = obj.find('.one');
+			var two = obj.find('.two');
+			var three = obj.find('.three');
+			var ani = function(){
+				one.animate({'opacity':1},300,function(){
+					two.animate({'opacity':1},500,function(){
+						three.animate({'opacity':1},500,function(){
+							one.css({'opacity' : 0})
+							two.css({'opacity' : 0})
+							three.css({'opacity' : 0})
+						})
+					})
+				})
+			}
+			ani();
+			clearInterval(obj.timer);
+			obj.timer = setInterval(function(){
+				ani();
+			},1400)	
+		}
+	</script>
+</body>
+</html>

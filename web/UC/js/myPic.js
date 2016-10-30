@@ -40,7 +40,7 @@ myPic.prototype = {
 		for(var i=0;i<that.aSmallImg.length;i++){
 			that.aSmallImg[i].index = i;
 			that.aSmallImg[i].onclick = function(){
-				var index = this.index
+				var index = this.index;
 				that.doClick(index);
 			}
 		}
@@ -86,7 +86,7 @@ myPic.prototype = {
 	},
 	doClick : function(i){
 		var that = this;
-		that.iBoxNow = i%that.picNum;
+		that.iBoxNow = i-that.iSimgNow;
 		that.startMove(that.box,{'left':that.iBoxNow * that.iSimgWidth + 15})
 		that.bigPicChange();
 	},
